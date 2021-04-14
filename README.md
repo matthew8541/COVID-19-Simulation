@@ -84,16 +84,21 @@ In order to model the interaction throughout people during the pandemics, a regu
     7. All the infecting, recovery, masking, and vaccinating rates are decided by the constants referenced from the papers.
 
 ### Reference: 
- * [1] COVID-ABS: An agent-based model of COVID-19 epidemic to simulate health and economic effects of social distancing interventions: https://reader.elsevier.com/reader/sd/pii/S0960077920304859?token=315C3393A6229C5AB8B7E8566F6E4E5B127349BA76D369BBD3D20C20B63D7040A503CE8FE00D08BE6C459A2C817C57DC&originRegion=us-east-1&originCreation=20210411164718
-Source Code: https://github.com/petroniocandido/COVID19_AgentBasedSimulation
- * [2] Modeling and forecasting of COVID-19 using a hybrid dynamic model based on SEIRD with ARIMA corrections: https://www.sciencedirect.com/science/article/pii/S2468042720301032
- * [3]Measuring and Preventing COVID-19 Using the SIR Model and Machine Learning in Smart Health Care: https://www.hindawi.com/journals/jhe/2020/8857346/ 
- * [4] A Simulation of a COVID-19 Epidemic Based on a Deterministic SEIR Model: https://www.frontiersin.org/articles/10.3389/fpubh.2020.00230/full 
- * [5] SEIR and SEIRS models: https://docs.idmod.org/projects/emod-hiv/en/latest/model-seir.html 
- * [6] Simulate Covid-19 in your area with Python — beyond SIR models (Individual-Based-Simulation): https://towardsdatascience.com/model-the-covid-19-epidemic-in-detail-with-python-98f0d13f3a0e 
- * [7] Modeling COVID-19 scenarios for United States (mask no mask, death rate, SEIR): https://www.nature.com/articles/s41591-020-1132-9#Sec7 
- * [8] Python Coronavirus Simulation: https://github.com/paulvangentcom/python_corona_simulation 
- * [9] A model based on cellular automata to estimate the social isolation impact on COVID-19 spreading in Brazil: https://www.sciencedirect.com/science/article/pii/S0169260720316655
+ * [1] [COVID-ABS: An agent-based model of COVID-19 epidemic to simulate health and economic effects of social distancing interventions] https://reader.elsevier.com/reader/sd/pii/S0960077920304859?token=315C3393A6229C5AB8B7E8566F6E4E5B127349BA76D369BBD3D20C20B63D7040A503CE8FE00D08BE6C459A2C817C57DC&originRegion=us-east-1&originCreation=20210411164718
+ * [2] [Modeling and forecasting of COVID-19 using a hybrid dynamic model based on SEIRD with ARIMA corrections] https://www.sciencedirect.com/science/article/pii/S2468042720301032
+ * [3] [Measuring and Preventing COVID-19 Using the SIR Model and Machine Learning in Smart Health Care]
+https://www.hindawi.com/journals/jhe/2020/8857346/ 
+ * [4] [A Simulation of a COVID-19 Epidemic Based on a Deterministic SEIR Model]
+https://www.frontiersin.org/articles/10.3389/fpubh.2020.00230/full 
+ * [5] [SEIR and SEIRS models] 
+https://docs.idmod.org/projects/emod-hiv/en/latest/model-seir.html 
+ * [6] [Simulate Covid-19 in your area with Python — beyond SIR models (Individual-Based-Simulation)] 
+https://towardsdatascience.com/model-the-covid-19-epidemic-in-detail-with-python-98f0d13f3a0e 
+ * [7] [Modeling COVID-19 scenarios for United States (mask no mask, death rate, SEIR)] 
+https://www.nature.com/articles/s41591-020-1132-9#Sec7 
+ * [8] [Python Coronavirus Simulation] 
+https://github.com/paulvangentcom/python_corona_simulation 
+ * [9] [A model based on cellular automata to estimate the social isolation impact on COVID-19 spreading in Brazil] https://www.sciencedirect.com/science/article/pii/S0169260720316655
 
 ### Databases
 Novel Corona Virus 2019 Datasets: https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset 
