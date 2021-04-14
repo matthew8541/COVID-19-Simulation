@@ -1,32 +1,5 @@
 # COVID-19 Simulation
 
-### ToDo
-1. Find reference coefficient from papers
-    - INIT_INFECTED (Initial Patients)
-    - INFECTION_RATE (S->E or S->I)
-    - INCUBATION_DAYS (Days before E -> I)
-    - EXPOSED_RATE (E -> I)
-    - RECOVERY_RATE (I -> R)
-    - SUSCEPTIBLE_RATE (R -> S)
-    - DEATH_RATE (I -> D)
-
-2. Case Study
-    - Initial patients to overall death rate
-    - Incubation days to Infection spread speed
-    - Number of dead population per specific day:
-      - https://www.frontiersin.org/articles/10.3389/fpubh.2020.00230/full
-    - Comparing our model to current Georgia's epidemic situation
-  
-3. Study Agent-Based Model (Future Work)
-In other words, how could we implement the behavior of wearing masks/being isolated/getting vaccinated to our existing models
-    - mask
-    - quarantine
-    - short term travel
-      - https://pubmed.ncbi.nlm.nih.gov/33481956/
-    - vaccine
-    - social distance 
-      - https://www.nature.com/articles/s41598-021-83540-2
-
 ### Motivation
 COVID-19 has been drastically changing the world during the past year. Throughout all the countries suffering from the pandemics, some countries dealt with it well by enforcing people wearing masks and social distancing, starting from the early stage of the pandemic. Therefore, we would like to model the pandemic to understand the behavior of the virus on human beings through compartmental models such as SIR/SEIR/SEIRD with the topological interaction via Cellular Automata (CA) [9] and then to study the influence of masks/vaccine/social distancing on controlling the outbreak with Agent-Based Model (ABM) [1] [3].
 
