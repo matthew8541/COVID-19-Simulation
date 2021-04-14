@@ -82,29 +82,6 @@ In order to model the interaction throughout people during the pandemics, a regu
     5. Once a person is exposed to the virus, it will at least take 7 days before becoming infectious. During the exposure period, the person is still contagious to infect others. During each hour, infectious people are able to infect others during commute, home, and work periods.
     6. During each day, the system assigns a random number of people to wear masks and get vaccinated. Masks could decrease the infecting rate by 50%, and the vaccine can lower the rate by 90%. Also, there will be a chance for people to recover from the pandemics at the start of a day.
     7. All the infecting, recovery, masking, and vaccinating rates are decided by the constants referenced from the papers.
-    
-
-### Current Results
-(Shown in [Project Checkpoint.pdf](https://github.gatech.edu/phsu40/CSE6730-Covid-Simulation/blob/master/Project%20Checkpoint.pdf))
-
-### Progress/Colaboration
-[COVID Simulation Project Github](https://github.gatech.edu/phsu40/6730-Covid-Simulation)
-
- We managed to store our code through Github and work daily on the project through VSCode's Live-Share extension. In terms of the progress, we had accomplished until this checkpoint was to explore various simulation models, such as SIR, SEIR, SEIRS, SEIRS, etc. These models were based on several references, including codes [6] and conceptual ideas [3][4] that helped us constructed these models and classes in Python. Our models were able to plot the Simulation curves, such as the SEIR curve through the constants and parameters we input. The displaying curves and plots do match our expectation of SIR-based models [5] would exhibit. In addition, we factored in attributes such as Death and incubation days [5] to further examine the correctness and possible outcomes to our models. That is to say, we are trying to have a comprehensive understanding of what model we would want to build our agent-based model on for our final project goal. 
- 
- During the progress we made for this checkpoint, we also decided on details about our agent-based model. We have found a reference model [1] that we could build our ABS (Agent-Based Simulation) on with several essential modifications. These modifications include the design pattern of how individuals would interact on a high level and the impact of the personal protective equipment would have on the pandemic. 
-
-### Division of Labor
-All the work was done collaboratively and synchronously. Everyone shares an equal amount of the workload during this project.
-
-### FutureWork:
-| Timeline                          |   Objectives                                       |
-|:---------------------------------:|:-------------------------------------------------- |
-| Period 1<br/>(~ 4/11)             | 1. Build models for SIR, SEIR(D), SEIRS(D)<br/> 2. Evaluate the correctness of the models<br/>3. Project Checkpoint<br/>4. Conceptual model for Agent-Based Simulation model |
-| Period 2<br/>(4/12 ~ 4/18)        | 1. Build SEIR Agent-Based Model with hourly-based 2D-square grid<br/>2. Utilize case studies to examine the correctness of the ABM<br/>3. Document the results of the ABM |
-| Period 3<br/>(4/19 ~ 4/26)        | 1. Possible future model building on hex grid configuration<br/>2. Modify the model after doing the case-study analysis <br/>3. Comparing the results to real-world pandemic situation |
-
-
 
 ### Reference: 
  * [1] COVID-ABS: An agent-based model of COVID-19 epidemic to simulate health and economic effects of social distancing interventions: https://reader.elsevier.com/reader/sd/pii/S0960077920304859?token=315C3393A6229C5AB8B7E8566F6E4E5B127349BA76D369BBD3D20C20B63D7040A503CE8FE00D08BE6C459A2C817C57DC&originRegion=us-east-1&originCreation=20210411164718
