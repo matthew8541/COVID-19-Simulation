@@ -1,9 +1,11 @@
 # COVID-19 Simulation
 
-### Motivation
+## Abstract
+
+## Motivation
 COVID-19 has been drastically changing the world during the past year. Throughout all the countries suffering from the pandemics, some countries dealt with it well by enforcing people wearing masks and social distancing, starting from the early stage of the pandemic. Therefore, we would like to model the pandemic to understand the behavior of the virus on human beings through compartmental models such as SIR/SEIR/SEIRD with the topological interaction via Cellular Automata (CA) [9] and then to study the influence of masks/vaccine/social distancing on controlling the outbreak with Agent-Based Model (ABM) [1] [3].
 
-### Introduction
+## Introduction
 To simulate models in epidemiology, compartmental models were commonly implemented to represent how individuals in a different state in a population interaction [5]. 
 1. SIR <br/>
    The SIR model divides the total population size at time t denoted as P(t) into Susceptible S(t), Infectious I(t) and Recovered R(t). Hence, for the total population we can get P(t) = S(t) + I(t) + R(t).
@@ -25,8 +27,8 @@ In order to model the interaction throughout people during the pandemics, a regu
    - Environments are the space where agents exist and interact with other agents. In ABM, the topological information differs from the case by case. In this project, we implement a grid similar to Cellular Automata as the topology of the interaction, but Network Interaction could also be implemented as environments in ABM.
    - Time contributes the "dynamic" to the simulation. During ABM simulation, it will go through a number of time steps where agents and environments update the states/characteristics. 
 
-### Methods
-* Stage One - Cellular Automata
+## Methods
+### Stage One - Cellular Automata
   - Compartmental Models: SIR/SEIR/SEIRD
   - CA Components: 
     1. Cell <br/>
@@ -47,7 +49,7 @@ In order to model the interaction throughout people during the pandemics, a regu
       - Exposed status will become Infectious based on the latent diseased rate
       - Infectious status will become Recovered based on the recovered rate or Died based on the death rate
 
-* Stage Two - Agent-Based Model (Anticipated)
+### Stage Two - Agent-Based Model (Anticipated)
   - Compartmental Models: SEIRD
   - ABM Components: 
       1. Agents <br/>
@@ -69,9 +71,9 @@ In order to model the interaction throughout people during the pandemics, a regu
 
       3. Time (Hour-Based) <br/>
         Our ABM model would be based on an hourly-timed axis. Each Person (individual) would have their next move after each hour. They would be either commuting through random walk or staying at their designated Home or Office according to the time.<br/>
-        - 19:00 - 07:00 -> Home (At House)
-        - 07:00 - 09:00 -> Commute (Random Walk: 1 step/hr) 
-        - 09:00 - 17:00 -> Work (At Office)
+        - 19:00 - 07:00 -> Home (At House)\
+        - 07:00 - 09:00 -> Commute (Random Walk: 1 step/hr)\
+        - 09:00 - 17:00 -> Work (At Office)\
         - 17:00 - 19:00 -> Commute (Random Walk: 1 step/hr)
 
   - ABM Rule:
@@ -82,9 +84,14 @@ In order to model the interaction throughout people during the pandemics, a regu
     5. Once a person is exposed to the virus, it will at least take 7 days before becoming infectious. During the exposure period, the person is still contagious to infect others. During each hour, infectious people are able to infect others during commute, home, and work periods.
     6. During each day, the system assigns a random number of people to wear masks and get vaccinated. Masks could decrease the infecting rate by 50%, and the vaccine can lower the rate by 90%. Also, there will be a chance for people to recover from the pandemics at the start of a day.
     7. All the infecting, recovery, masking, and vaccinating rates are decided by the constants referenced from the papers.
+    
 
-### Reference: 
+## Current Results
+(Shown in [Project Checkpoint.pdf](https://github.gatech.edu/phsu40/CSE6730-Covid-Simulation/blob/master/Project%20Checkpoint.pdf))
+
+## Reference: 
  * [1] COVID-ABS: An agent-based model of COVID-19 epidemic to simulate health and economic effects of social distancing interventions: https://reader.elsevier.com/reader/sd/pii/S0960077920304859?token=315C3393A6229C5AB8B7E8566F6E4E5B127349BA76D369BBD3D20C20B63D7040A503CE8FE00D08BE6C459A2C817C57DC&originRegion=us-east-1&originCreation=20210411164718
+Source Code: https://github.com/petroniocandido/COVID19_AgentBasedSimulation
  * [2] Modeling and forecasting of COVID-19 using a hybrid dynamic model based on SEIRD with ARIMA corrections: https://www.sciencedirect.com/science/article/pii/S2468042720301032
  * [3]Measuring and Preventing COVID-19 Using the SIR Model and Machine Learning in Smart Health Care: https://www.hindawi.com/journals/jhe/2020/8857346/ 
  * [4] A Simulation of a COVID-19 Epidemic Based on a Deterministic SEIR Model: https://www.frontiersin.org/articles/10.3389/fpubh.2020.00230/full 
@@ -94,5 +101,5 @@ In order to model the interaction throughout people during the pandemics, a regu
  * [8] Python Coronavirus Simulation: https://github.com/paulvangentcom/python_corona_simulation 
  * [9] A model based on cellular automata to estimate the social isolation impact on COVID-19 spreading in Brazil: https://www.sciencedirect.com/science/article/pii/S0169260720316655
 
-### Databases
+## Databases
 Novel Corona Virus 2019 Datasets: https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset 

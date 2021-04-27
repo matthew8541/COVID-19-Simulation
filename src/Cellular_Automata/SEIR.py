@@ -64,6 +64,7 @@ class Automata_SEIR(Automata):
         self.e_arr.append(self.getE())
         self.i_arr.append(self.getI())
         self.r_arr.append(self.getR())
+        self.peopleStates_arr.append(self.getPeopleState())
         self.days.append(self.day)
 
     def plotCurve(self):
@@ -107,7 +108,7 @@ class Automata_SEIR(Automata):
 
                 currPerson = self.people[i][j]
                 self.applyRulesOfInfection(currPerson, infectedNeighbors)
-
+        self.accumulateData()
         self.day += 1
 
 
@@ -128,9 +129,9 @@ class Automata_SEIR(Automata):
                 person.setState(2)
                 return
         
-            chanceRecovery = random.random()
-            if chanceRecovery <= RECOVERY_RATE:
-                person.setState(3)
+            # chanceRecovery = random.random()
+            # if chanceRecovery <= RECOVERY_RATE:
+            #     person.setState(3)
         
         # Infectious: 2
         elif person.prevState == 2:
