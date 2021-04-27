@@ -86,8 +86,8 @@ In order to model the interaction throughout people during the pandemics, a regu
     7. All the infecting, recovery, masking, and vaccinating rates are decided by the constants referenced from the papers.
     
 
-## Current Results
-(Shown in [Project Checkpoint.pdf](https://github.gatech.edu/phsu40/CSE6730-Covid-Simulation/blob/master/Project%20Checkpoint.pdf))
+## Modeling and Analysis
+(Shown in [Project Checkpoint.pdf](https://github.com/matthew8541/COVID-19-Simulation/blob/main/CSE6730%20Final%20Report%20-%20COVID%20Simulation.pdf))
 
 ## Reference: 
  * [1] COVID-ABS: An agent-based model of COVID-19 epidemic to simulate health and economic effects of social distancing interventions: https://reader.elsevier.com/reader/sd/pii/S0960077920304859?token=315C3393A6229C5AB8B7E8566F6E4E5B127349BA76D369BBD3D20C20B63D7040A503CE8FE00D08BE6C459A2C817C57DC&originRegion=us-east-1&originCreation=20210411164718
